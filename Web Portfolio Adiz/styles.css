@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+    font-family: 'roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+header {
+    box-shadow: 0 10px 50px #333;
+    background-color: gold;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-decoration: underline;
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    padding: 0;
+    margin: 10px 0 0;
+    text-decoration: none;
+}
+
+header nav a {
+    padding: 0;
+    margin: 30px 0 0;
+    text-decoration: none;
+    display: inline;
+    margin: 0 15px;
+    font-weight: 600;
+    color: whitesmoke;
+    transition: color .3s ease;
+    justify-content: flex-end;
+}
+
+header nav a:hover {
+    color: black;
+}
+
+#hero {
+    background-color: black;
+    text-align: center;
+}
+
+.img-container {
+    height: 640px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.opening {
+    position: static; /* Tetap di tempat saat di-scroll */
+    top: 0; /* Mulai dari atas halaman */
+    left: 0; /* Mulai dari kiri halaman */
+    width: 100%; /* Lebar 100% dari layar */
+    height: 100vh; /* Tinggi 100% dari layar */
+    background-image: url(img/Opening\ Web\ Portofolio\ 2.0.png); /* Ganti dengan path gambar background */
+    background-size: cover; /* Membuat background mencakup seluruh area */
+    background-position: center; /* Menjaga gambar tetap di tengah */
+    z-index: -1; /* Membuat background di belakang konten lainnya */
+}
+
+.opening .isi {
+    text-align: left;
+    padding-top: 150px;
+    margin-left: 20px;
+}
+
+.opening .isi h1 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.opening .isi h1 span {
+    text-decoration: underline;
+    color: gold;
+}
+
+.opening .isi h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.opening .isi p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.about-me {
+    background-image: url(img/About\ me\ bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+
+.about-me .isi h1 {
+    color: gold;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.about-me .isi p {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-right: 20rem;
+    margin-top: 30px;
+}
+
+.about-me .isi p span {
+    color: goldenrod;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.my-skills {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.my-skills .isi h1 {
+    padding-top: 20px;
+    color: gold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.skill-list li {
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.my-edu {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.my-edu .isi {
+    color: white;
+    padding-top: 20px;
+}
+
+.my-edu .isi h1 {
+    padding-top: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.isi .senior-highschool h2 {
+    
+    margin-top: 20px;
+    text-align: left;
+}
+
+.my-contact {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.my-contact .isi {
+    color: black;
+    padding-top: 20px;
+}
+
+.my-contact .isi h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.my-contact .isi p {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-right: 20rem;
+    margin-top: 30px;
+}
+
+.my-contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.my-contact input, .my-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.my-contact button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.my-contact button:hover {
+    background-color: black;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
